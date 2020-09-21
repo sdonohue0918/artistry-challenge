@@ -1,0 +1,6 @@
+<h1> Artists' Page </h1>
+
+<p><% @artists.each do |a|%></p>
+<%= a.name%>
+<%= link_to "My Page", artist_path(a.id)%>
+<% end %>

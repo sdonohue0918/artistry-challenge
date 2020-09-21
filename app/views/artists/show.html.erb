@@ -1,0 +1,9 @@
+<h1> Hi, I'm <%= @artist.name%>! Check out me deets!</h1>
+<p> My deets</p>
+<ul>
+    <li><%= @artist.title%></li>
+    <li><%= @artist.age%></li>
+    <% @artist.instruments.each do |i|%>
+       <p>You know, I also play...</p> 
+        <li><%= i.name%></li>
+        <%end%>
